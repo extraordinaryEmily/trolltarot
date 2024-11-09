@@ -1,0 +1,43 @@
+/* Button and tooltip styling */
+.button-container {
+    position: relative;
+  }
+  
+  .interactive-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .button-image {
+    width: 13vh;
+    height: 13vh;
+  }
+  
+  /* Tooltip styling */
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the tooltip below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #250e30; /* Set the background color */
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 20vw; /* Doesn't actually seem to do anything */
+    min-width: 100px;
+    max-width: 150px; 
+    font-size: 12px;
+    margin-top: 5px; /* Add some space between the button and the tooltip */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words to avoid overflow */
+  }
+  
+  /* Show tooltip on hover */
+  .button-container:hover .tooltip {
+    display: block;
+  }
+  
+  
